@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Website</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Antic+Didone&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha512-HLRVob9H5BzxFZ6oZJ2Y59dG8QpkbaBbB+F0P3RsxfqWrG1U/Gl2puY7a3PZ5cMtp1/EtvHEr+Dozg+7+MAD8A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="finallogo.png" class="logo" alt="logo">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">Services</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Full Stack Developer</p>
+                <h1>Hey! I'm <span> Sharvari </span>
+                    <br>& I'm a <br><span id="element"></span>
+                </h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------------about------------- -->
+    <div id="About">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="bg.jpg" alt="About me photo">
+                </div>
+                <div class="about-col-1">
+                    <h1 class="sub-title">About me</h1>
+                    <br>
+                    <br>
+                    <p>As a highly driven student from IT branch, I'm focused on developing my skills in various
+                        programing languages. With growing knowledge in JavaScript and Python, excited to use my
+                        skillset to contribute to the company's engineering efforts. <br>
+                        I enjoy working collaboratively but can also run with projects independently. I have
+                        commitment to excellence, and a drive for continuous improvement. <br>
+                        Motivated to advance and expand my skillset through targeted internships and challenging
+                        projects.</p> <br>
+
+                    <div class="tabTitles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('edu')">Education</p>
+                        <p class="tab-links" onclick="opentab('certf')">Certifications</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Understanding users</li>
+                            <li><span>Python Development</span><br>Creating small projects with GUI</li>
+                            <li><span>Web Development</span><br>Web PAges using HTML, CSS and JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="edu">
+                        <ul>
+                            <li><span>B.Tech, IT</span><br>Ramdeobaba College of Engineering and Management <br>CGPA-
+                                8.43 <br>Currently pursuing</li>
+                            <li><span>HSC (11<sup>th</sup>-12<sup>th</sup>)</span><br>Santaji Mahavidyalaya
+                                <br>Percentage- 94% <br>passing: 2021
+                            </li>
+                            <li><span>SSC (till 10<sup>th</sup>) </span><br>Bhavan's Vidya Mandir <br>Percentage- 94%
+                                <br>passing: 2019
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="certf">
+                        <ul>
+                            <li><span>Python Computing</span><br>programming Fundamentals, abstraction in developing
+                                practical applications</li>
+                            <li><span>Google UX Design</span><br>user-centered design principles, user needs, design
+                                challenges, and translating ideas into wireframes & prototypes.</li>
+                            <li><span>Basics of Ethical Hacking</span><br>networking, network security, cryptography,
+                                identifying vulnerabilities, mitigating attacks, and implementing robust security
+                                measures.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- -------portfolio------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/proj1.png" alt="work 1 img">
+                    <div class="layer">
+                        <h3>Website Portfolio</h3>
+                        <p>Created a portfolio website using technologies like HTML, CSS and Javascript and deployed
+                            using Github.</p>
+                        <a href="https://sharvarii-17.github.io/portfolio/"><img src="images/link.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/proj3.png" alt="work 2 img">
+                    <div class="layer">
+                        <h3>Text Summarizer</h3>
+                        <p>Text summarization using cosine similarity and the PageRank algorithm to identify and extract
+                            the most important sentences from a given text, forming a concise summary.</p>
+                        <a href="https://github.com/sharvarii-17/Python-projects.git"><img src="images/link.png" alt=""></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/proj2.png" alt="work 3 img">
+                    <div class="layer">
+                        <h3>Shortest Distance Calculator</h3>
+                        <p>Visualization of a transportation network and finding the shortest path between two specified
+                            places using Dijkstra's algorithm. <br>Provides an interactive way to visualize a
+                            transportation network, find the shortest path, and display relevant information about the
+                            journey, such as distance, time, and fare.</p>
+                        <a href="https://github.com/sharvarii-17/Python-projects.git"><img src="images/link.png" alt=""></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------contact------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact me</h1>
+                    <p> <img src="images/message.png" alt=""> sharvari6817@gmail.com</p>
+                    <p> <img src="images/call.png" alt=""> 1234567890</p>
+                    <div class="social-icons">
+                        <a href="https://github.com/sharvarii-17"> <img src="images/github.png" alt=""></a>
+                        <a href="https://www.linkedin.com/in/sharvari-inamdar2002/"> <img src="images/linkedin.png" alt=""> </a>
+                    </div>
+                    <a href="Resume.pdf" class="btn btn2">Download resume</a>
+                </div>
+                <div class="contact-right">
+                    <form>
+                        <input type="text" name="Name" placeholder="Your name: " required>
+                        <input type="email" name="email" placeholder="Your email: " required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>copyright <img src="images/copyright.png" alt=""> Sharvari.</p>
+        </div>
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links")
+        var tabcontents = document.getElementsByClassName("tab-contents")
+
+        function opentab(tabName) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['Web Developer', 'Full Stack Developer', 'Enthusiastic Coder'],
+            typeSpeed: 50,
+        });
+    </script>
+</body>
+
+</html>
